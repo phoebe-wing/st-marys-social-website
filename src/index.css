@@ -1,0 +1,572 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --color-schemes-color-scheme-1-accent: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-1-background: var(--primitives-color-white);
+  --color-schemes-color-scheme-1-border: var(
+    --primitives-opacity-neutral-darkest-15
+  );
+  --color-schemes-color-scheme-1-foreground: var(
+    --primitives-color-neutral-lightest
+  );
+  --color-schemes-color-scheme-1-text: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-2-accent: var(--primitives-color-corn);
+  --color-schemes-color-scheme-2-background: var(
+    --primitives-color-neutral-darkest
+  );
+  --color-schemes-color-scheme-2-border: var(--primitives-opacity-white-20);
+  --color-schemes-color-scheme-2-foreground: var(
+    --primitives-color-neutral-darker
+  );
+  --color-schemes-color-scheme-2-text: var(--primitives-color-white);
+  --color-schemes-color-scheme-3-accent: var(--primitives-color-corn);
+  --color-schemes-color-scheme-3-background: var(
+    --primitives-color-neutral-darker
+  );
+  --color-schemes-color-scheme-3-border: var(--primitives-opacity-white-20);
+  --color-schemes-color-scheme-3-foreground: var(
+    --primitives-color-neutral-darkest
+  );
+  --color-schemes-color-scheme-3-text: var(--primitives-color-white);
+  --color-schemes-color-scheme-4-accent: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-4-background: var(
+    --primitives-color-corn-lighter
+  );
+  --color-schemes-color-scheme-4-border: var(
+    --primitives-opacity-neutral-darkest-15
+  );
+  --color-schemes-color-scheme-4-foreground: var(
+    --primitives-color-corn-lightest
+  );
+  --color-schemes-color-scheme-4-text: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-5-accent: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-5-background: var(--primitives-color-corn-light);
+  --color-schemes-color-scheme-5-border: var(
+    --primitives-opacity-neutral-darkest-15
+  );
+  --color-schemes-color-scheme-5-foreground: var(--primitives-color-corn);
+  --color-schemes-color-scheme-5-text: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-6-accent: var(--primitives-color-neutral-darkest);
+  --color-schemes-color-scheme-6-background: var(
+    --primitives-color-mustard-light
+  );
+  --color-schemes-color-scheme-6-border: var(
+    --primitives-opacity-neutral-darkest-15
+  );
+  --color-schemes-color-scheme-6-foreground: var(--primitives-color-mustard);
+  --color-schemes-color-scheme-6-text: var(--primitives-color-neutral-darkest);
+  --heading-h1-font-family: "Unbounded", Helvetica;
+  --heading-h1-font-size: 72px;
+  --heading-h1-font-style: normal;
+  --heading-h1-font-weight: 500;
+  --heading-h1-letter-spacing: -0.72px;
+  --heading-h1-line-height: 120.00000476837158%;
+  --heading-h2-font-family: "Unbounded", Helvetica;
+  --heading-h2-font-size: 52px;
+  --heading-h2-font-style: normal;
+  --heading-h2-font-weight: 500;
+  --heading-h2-letter-spacing: -0.52px;
+  --heading-h2-line-height: 120.00000476837158%;
+  --heading-h3-font-family: "Unbounded", Helvetica;
+  --heading-h3-font-size: 44px;
+  --heading-h3-font-style: normal;
+  --heading-h3-font-weight: 500;
+  --heading-h3-letter-spacing: -0.44px;
+  --heading-h3-line-height: 120.00000476837158%;
+  --heading-h4-font-family: "Unbounded", Helvetica;
+  --heading-h4-font-size: 36px;
+  --heading-h4-font-style: normal;
+  --heading-h4-font-weight: 500;
+  --heading-h4-letter-spacing: -0.36px;
+  --heading-h4-line-height: 129.99999523162842%;
+  --heading-h5-font-family: "Unbounded", Helvetica;
+  --heading-h5-font-size: 28px;
+  --heading-h5-font-style: normal;
+  --heading-h5-font-weight: 500;
+  --heading-h5-letter-spacing: -0.28px;
+  --heading-h5-line-height: 139.9999976158142%;
+  --heading-h6-font-family: "Unbounded", Helvetica;
+  --heading-h6-font-size: 22px;
+  --heading-h6-font-style: normal;
+  --heading-h6-font-weight: 500;
+  --heading-h6-letter-spacing: -0.22px;
+  --heading-h6-line-height: 139.9999976158142%;
+  --heading-tagline-font-family: "Inter", Helvetica;
+  --heading-tagline-font-size: 16px;
+  --heading-tagline-font-style: normal;
+  --heading-tagline-font-weight: 600;
+  --heading-tagline-letter-spacing: 0px;
+  --heading-tagline-line-height: 150%;
+  --large: 0px 8px 8px -4px rgba(0, 0, 0, 0.03), 0px 20px 24px -4px
+    rgba(0, 0, 0, 0.08);
+  --medium: 0px 4px 6px -2px rgba(0, 0, 0, 0.03), 0px 12px 16px -4px
+    rgba(0, 0, 0, 0.08);
+  --primitives-color-corn: rgba(222, 177, 0, 1);
+  --primitives-color-corn-dark: rgba(177, 141, 0, 1);
+  --primitives-color-corn-darker: rgba(88, 70, 0, 1);
+  --primitives-color-corn-darkest: rgba(66, 53, 0, 1);
+  --primitives-color-corn-light: rgba(231, 200, 76, 1);
+  --primitives-color-corn-lighter: rgba(248, 239, 204, 1);
+  --primitives-color-corn-lightest: rgba(251, 247, 229, 1);
+  --primitives-color-electric-violet: rgba(200, 10, 217, 1);
+  --primitives-color-electric-violet-dark: rgba(160, 8, 173, 1);
+  --primitives-color-electric-violet-darker: rgba(80, 4, 86, 1);
+  --primitives-color-electric-violet-darkest: rgba(60, 3, 65, 1);
+  --primitives-color-electric-violet-light: rgba(216, 83, 228, 1);
+  --primitives-color-electric-violet-lighter: rgba(244, 206, 247, 1);
+  --primitives-color-electric-violet-lightest: rgba(249, 230, 251, 1);
+  --primitives-color-mustard: rgba(255, 210, 77, 1);
+  --primitives-color-mustard-dark: rgba(204, 168, 61, 1);
+  --primitives-color-mustard-darker: rgba(102, 84, 30, 1);
+  --primitives-color-mustard-darkest: rgba(76, 63, 23, 1);
+  --primitives-color-mustard-light: rgba(255, 223, 130, 1);
+  --primitives-color-mustard-lighter: rgba(255, 246, 219, 1);
+  --primitives-color-mustard-lightest: rgba(255, 250, 237, 1);
+  --primitives-color-neutral: rgba(127, 127, 127, 1);
+  --primitives-color-neutral-dark: rgba(76, 76, 76, 1);
+  --primitives-color-neutral-darker: rgba(25, 25, 25, 1);
+  --primitives-color-neutral-darkest: rgba(0, 0, 0, 1);
+  --primitives-color-neutral-light: rgba(178, 178, 178, 1);
+  --primitives-color-neutral-lighter: rgba(216, 216, 216, 1);
+  --primitives-color-neutral-lightest: rgba(242, 242, 242, 1);
+  --primitives-color-white: rgba(255, 255, 255, 1);
+  --primitives-opacity-neutral-darkest-10: rgba(0, 0, 0, 0.1);
+  --primitives-opacity-neutral-darkest-15: rgba(0, 0, 0, 0.15);
+  --primitives-opacity-neutral-darkest-20: rgba(0, 0, 0, 0.2);
+  --primitives-opacity-neutral-darkest-30: rgba(0, 0, 0, 0.3);
+  --primitives-opacity-neutral-darkest-40: rgba(0, 0, 0, 0.4);
+  --primitives-opacity-neutral-darkest-5: rgba(0, 0, 0, 0.05);
+  --primitives-opacity-neutral-darkest-50: rgba(0, 0, 0, 0.5);
+  --primitives-opacity-neutral-darkest-60: rgba(0, 0, 0, 0.6);
+  --primitives-opacity-transparent: rgba(255, 255, 255, 0);
+  --primitives-opacity-white-10: rgba(255, 255, 255, 0.1);
+  --primitives-opacity-white-15: rgba(255, 255, 255, 0.15);
+  --primitives-opacity-white-20: rgba(255, 255, 255, 0.2);
+  --primitives-opacity-white-30: rgba(255, 255, 255, 0.3);
+  --primitives-opacity-white-40: rgba(255, 255, 255, 0.4);
+  --primitives-opacity-white-5: rgba(255, 255, 255, 0.05);
+  --primitives-opacity-white-50: rgba(255, 255, 255, 0.5);
+  --primitives-opacity-white-60: rgba(255, 255, 255, 0.6);
+  --small: 0px 2px 4px -2px rgba(0, 0, 0, 0.06), 0px 4px 8px -2px
+    rgba(0, 0, 0, 0.1);
+  --spacing-sizing-container-container-large: 1280px;
+  --spacing-sizing-container-container-medium: 1024px;
+  --spacing-sizing-container-container-small: 768px;
+  --spacing-sizing-max-width-max-width-large: 768px;
+  --spacing-sizing-max-width-max-width-medium: 560px;
+  --spacing-sizing-max-width-max-width-small: 480px;
+  --spacing-sizing-max-width-max-width-xlarge: 1024px;
+  --spacing-sizing-max-width-max-width-xsmall: 400px;
+  --spacing-sizing-max-width-max-width-xxlarge: 1280px;
+  --spacing-sizing-max-width-max-width-xxsmall: 320px;
+  --spacing-sizing-page-padding-padding-global: 64px;
+  --spacing-sizing-section-padding-padding-section-large: 112px;
+  --spacing-sizing-section-padding-padding-section-medium: 80px;
+  --spacing-sizing-section-padding-padding-section-small: 48px;
+  --text-large-bold-font-family: "Inter", Helvetica;
+  --text-large-bold-font-size: 22px;
+  --text-large-bold-font-style: normal;
+  --text-large-bold-font-weight: 700;
+  --text-large-bold-letter-spacing: 0px;
+  --text-large-bold-line-height: 150%;
+  --text-large-extra-bold-font-family: "Inter", Helvetica;
+  --text-large-extra-bold-font-size: 22px;
+  --text-large-extra-bold-font-style: normal;
+  --text-large-extra-bold-font-weight: 800;
+  --text-large-extra-bold-letter-spacing: 0px;
+  --text-large-extra-bold-line-height: 150%;
+  --text-large-light-font-family: "Inter", Helvetica;
+  --text-large-light-font-size: 22px;
+  --text-large-light-font-style: normal;
+  --text-large-light-font-weight: 300;
+  --text-large-light-letter-spacing: 0px;
+  --text-large-light-line-height: 150%;
+  --text-large-link-font-family: "Inter", Helvetica;
+  --text-large-link-font-size: 22px;
+  --text-large-link-font-style: normal;
+  --text-large-link-font-weight: 400;
+  --text-large-link-letter-spacing: 0px;
+  --text-large-link-line-height: 150%;
+  --text-large-medium-font-family: "Inter", Helvetica;
+  --text-large-medium-font-size: 22px;
+  --text-large-medium-font-style: normal;
+  --text-large-medium-font-weight: 500;
+  --text-large-medium-letter-spacing: 0px;
+  --text-large-medium-line-height: 150%;
+  --text-large-normal-font-family: "Inter", Helvetica;
+  --text-large-normal-font-size: 22px;
+  --text-large-normal-font-style: normal;
+  --text-large-normal-font-weight: 400;
+  --text-large-normal-letter-spacing: 0px;
+  --text-large-normal-line-height: 150%;
+  --text-large-semi-bold-font-family: "Inter", Helvetica;
+  --text-large-semi-bold-font-size: 22px;
+  --text-large-semi-bold-font-style: normal;
+  --text-large-semi-bold-font-weight: 600;
+  --text-large-semi-bold-letter-spacing: 0px;
+  --text-large-semi-bold-line-height: 150%;
+  --text-medium-bold-font-family: "Inter", Helvetica;
+  --text-medium-bold-font-size: 18px;
+  --text-medium-bold-font-style: normal;
+  --text-medium-bold-font-weight: 700;
+  --text-medium-bold-letter-spacing: 0px;
+  --text-medium-bold-line-height: 150%;
+  --text-medium-extra-bold-font-family: "Inter", Helvetica;
+  --text-medium-extra-bold-font-size: 18px;
+  --text-medium-extra-bold-font-style: normal;
+  --text-medium-extra-bold-font-weight: 800;
+  --text-medium-extra-bold-letter-spacing: 0px;
+  --text-medium-extra-bold-line-height: 150%;
+  --text-medium-light-font-family: "Inter", Helvetica;
+  --text-medium-light-font-size: 18px;
+  --text-medium-light-font-style: normal;
+  --text-medium-light-font-weight: 300;
+  --text-medium-light-letter-spacing: 0px;
+  --text-medium-light-line-height: 150%;
+  --text-medium-link-font-family: "Inter", Helvetica;
+  --text-medium-link-font-size: 18px;
+  --text-medium-link-font-style: normal;
+  --text-medium-link-font-weight: 400;
+  --text-medium-link-letter-spacing: 0px;
+  --text-medium-link-line-height: 150%;
+  --text-medium-medium-font-family: "Inter", Helvetica;
+  --text-medium-medium-font-size: 18px;
+  --text-medium-medium-font-style: normal;
+  --text-medium-medium-font-weight: 500;
+  --text-medium-medium-letter-spacing: 0px;
+  --text-medium-medium-line-height: 150%;
+  --text-medium-normal-font-family: "Inter", Helvetica;
+  --text-medium-normal-font-size: 18px;
+  --text-medium-normal-font-style: normal;
+  --text-medium-normal-font-weight: 400;
+  --text-medium-normal-letter-spacing: 0px;
+  --text-medium-normal-line-height: 150%;
+  --text-medium-semi-bold-font-family: "Inter", Helvetica;
+  --text-medium-semi-bold-font-size: 18px;
+  --text-medium-semi-bold-font-style: normal;
+  --text-medium-semi-bold-font-weight: 600;
+  --text-medium-semi-bold-letter-spacing: 0px;
+  --text-medium-semi-bold-line-height: 150%;
+  --text-regular-bold-font-family: "Inter", Helvetica;
+  --text-regular-bold-font-size: 16px;
+  --text-regular-bold-font-style: normal;
+  --text-regular-bold-font-weight: 700;
+  --text-regular-bold-letter-spacing: 0px;
+  --text-regular-bold-line-height: 150%;
+  --text-regular-extra-bold-font-family: "Inter", Helvetica;
+  --text-regular-extra-bold-font-size: 16px;
+  --text-regular-extra-bold-font-style: normal;
+  --text-regular-extra-bold-font-weight: 800;
+  --text-regular-extra-bold-letter-spacing: 0px;
+  --text-regular-extra-bold-line-height: 150%;
+  --text-regular-light-font-family: "Inter", Helvetica;
+  --text-regular-light-font-size: 16px;
+  --text-regular-light-font-style: normal;
+  --text-regular-light-font-weight: 300;
+  --text-regular-light-letter-spacing: 0px;
+  --text-regular-light-line-height: 150%;
+  --text-regular-link-font-family: "Inter", Helvetica;
+  --text-regular-link-font-size: 16px;
+  --text-regular-link-font-style: normal;
+  --text-regular-link-font-weight: 400;
+  --text-regular-link-letter-spacing: 0px;
+  --text-regular-link-line-height: 150%;
+  --text-regular-medium-font-family: "Inter", Helvetica;
+  --text-regular-medium-font-size: 16px;
+  --text-regular-medium-font-style: normal;
+  --text-regular-medium-font-weight: 500;
+  --text-regular-medium-letter-spacing: 0px;
+  --text-regular-medium-line-height: 150%;
+  --text-regular-normal-font-family: "Inter", Helvetica;
+  --text-regular-normal-font-size: 16px;
+  --text-regular-normal-font-style: normal;
+  --text-regular-normal-font-weight: 400;
+  --text-regular-normal-letter-spacing: 0px;
+  --text-regular-normal-line-height: 150%;
+  --text-regular-semi-bold-font-family: "Inter", Helvetica;
+  --text-regular-semi-bold-font-size: 16px;
+  --text-regular-semi-bold-font-style: normal;
+  --text-regular-semi-bold-font-weight: 600;
+  --text-regular-semi-bold-letter-spacing: 0px;
+  --text-regular-semi-bold-line-height: 150%;
+  --text-small-bold-font-family: "Inter", Helvetica;
+  --text-small-bold-font-size: 14px;
+  --text-small-bold-font-style: normal;
+  --text-small-bold-font-weight: 700;
+  --text-small-bold-letter-spacing: 0px;
+  --text-small-bold-line-height: 150%;
+  --text-small-extra-bold-font-family: "Inter", Helvetica;
+  --text-small-extra-bold-font-size: 14px;
+  --text-small-extra-bold-font-style: normal;
+  --text-small-extra-bold-font-weight: 800;
+  --text-small-extra-bold-letter-spacing: 0px;
+  --text-small-extra-bold-line-height: 150%;
+  --text-small-light-font-family: "Inter", Helvetica;
+  --text-small-light-font-size: 14px;
+  --text-small-light-font-style: normal;
+  --text-small-light-font-weight: 300;
+  --text-small-light-letter-spacing: 0px;
+  --text-small-light-line-height: 150%;
+  --text-small-link-font-family: "Inter", Helvetica;
+  --text-small-link-font-size: 14px;
+  --text-small-link-font-style: normal;
+  --text-small-link-font-weight: 400;
+  --text-small-link-letter-spacing: 0px;
+  --text-small-link-line-height: 150%;
+  --text-small-medium-font-family: "Inter", Helvetica;
+  --text-small-medium-font-size: 14px;
+  --text-small-medium-font-style: normal;
+  --text-small-medium-font-weight: 500;
+  --text-small-medium-letter-spacing: 0px;
+  --text-small-medium-line-height: 150%;
+  --text-small-normal-font-family: "Inter", Helvetica;
+  --text-small-normal-font-size: 14px;
+  --text-small-normal-font-style: normal;
+  --text-small-normal-font-weight: 400;
+  --text-small-normal-letter-spacing: 0px;
+  --text-small-normal-line-height: 150%;
+  --text-small-semi-bold-font-family: "Inter", Helvetica;
+  --text-small-semi-bold-font-size: 14px;
+  --text-small-semi-bold-font-style: normal;
+  --text-small-semi-bold-font-weight: 600;
+  --text-small-semi-bold-letter-spacing: 0px;
+  --text-small-semi-bold-line-height: 150%;
+  --text-tiny-bold-font-family: "Inter", Helvetica;
+  --text-tiny-bold-font-size: 12px;
+  --text-tiny-bold-font-style: normal;
+  --text-tiny-bold-font-weight: 700;
+  --text-tiny-bold-letter-spacing: 0px;
+  --text-tiny-bold-line-height: 150%;
+  --text-tiny-extra-bold-font-family: "Inter", Helvetica;
+  --text-tiny-extra-bold-font-size: 12px;
+  --text-tiny-extra-bold-font-style: normal;
+  --text-tiny-extra-bold-font-weight: 800;
+  --text-tiny-extra-bold-letter-spacing: 0px;
+  --text-tiny-extra-bold-line-height: 150%;
+  --text-tiny-light-font-family: "Inter", Helvetica;
+  --text-tiny-light-font-size: 12px;
+  --text-tiny-light-font-style: normal;
+  --text-tiny-light-font-weight: 300;
+  --text-tiny-light-letter-spacing: 0px;
+  --text-tiny-light-line-height: 150%;
+  --text-tiny-link-font-family: "Inter", Helvetica;
+  --text-tiny-link-font-size: 12px;
+  --text-tiny-link-font-style: normal;
+  --text-tiny-link-font-weight: 400;
+  --text-tiny-link-letter-spacing: 0px;
+  --text-tiny-link-line-height: 150%;
+  --text-tiny-medium-font-family: "Inter", Helvetica;
+  --text-tiny-medium-font-size: 12px;
+  --text-tiny-medium-font-style: normal;
+  --text-tiny-medium-font-weight: 500;
+  --text-tiny-medium-letter-spacing: 0px;
+  --text-tiny-medium-line-height: 150%;
+  --text-tiny-normal-font-family: "Inter", Helvetica;
+  --text-tiny-normal-font-size: 12px;
+  --text-tiny-normal-font-style: normal;
+  --text-tiny-normal-font-weight: 400;
+  --text-tiny-normal-letter-spacing: 0px;
+  --text-tiny-normal-line-height: 150%;
+  --text-tiny-semi-bold-font-family: "Inter", Helvetica;
+  --text-tiny-semi-bold-font-size: 12px;
+  --text-tiny-semi-bold-font-style: normal;
+  --text-tiny-semi-bold-font-weight: 600;
+  --text-tiny-semi-bold-letter-spacing: 0px;
+  --text-tiny-semi-bold-line-height: 150%;
+  --typography-text-sizes-heading-1: 72px;
+  --typography-text-sizes-heading-2: 52px;
+  --typography-text-sizes-heading-3: 44px;
+  --typography-text-sizes-heading-4: 36px;
+  --typography-text-sizes-heading-5: 28px;
+  --typography-text-sizes-heading-6: 22px;
+  --typography-text-sizes-text-large: 22px;
+  --typography-text-sizes-text-medium: 18px;
+  --typography-text-sizes-text-regular: 16px;
+  --typography-text-sizes-text-small: 14px;
+  --typography-text-sizes-text-tiny: 12px;
+  --UI-styles-radius-large: 16px;
+  --UI-styles-radius-medium: 16px;
+  --UI-styles-radius-small: 16px;
+  --UI-styles-stroke-border-width: 0px;
+  --UI-styles-stroke-divider-width: 1px;
+  --xlarge: 0px 24px 48px -12px rgba(0, 0, 0, 0.18);
+  --xsmall: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px
+    rgba(0, 0, 0, 0.1);
+  --xxlarge: 0px 32px 64px -12px rgba(0, 0, 0, 0.14);
+  --xxsmall: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-typography-mode="desktop">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-typography-mode="desktop"] {
+  --typography-text-sizes-heading-1: 72px;
+  --typography-text-sizes-heading-2: 52px;
+  --typography-text-sizes-heading-3: 44px;
+  --typography-text-sizes-heading-4: 36px;
+  --typography-text-sizes-heading-5: 28px;
+  --typography-text-sizes-heading-6: 22px;
+  --typography-text-sizes-text-large: 22px;
+  --typography-text-sizes-text-medium: 18px;
+}
+
+[data-typography-mode="mobile"] {
+  --typography-text-sizes-heading-1: 40px;
+  --typography-text-sizes-heading-2: 36px;
+  --typography-text-sizes-heading-3: 32px;
+  --typography-text-sizes-heading-4: 24px;
+  --typography-text-sizes-heading-5: 20px;
+  --typography-text-sizes-heading-6: 18px;
+  --typography-text-sizes-text-large: 18px;
+  --typography-text-sizes-text-medium: 16px;
+}
+
+[data-spacing-sizing-mode="desktop"] {
+  --spacing-sizing-page-padding-padding-global: 64px;
+  --spacing-sizing-section-padding-padding-section-large: 112px;
+  --spacing-sizing-section-padding-padding-section-medium: 80px;
+  --spacing-sizing-section-padding-padding-section-small: 48px;
+}
+
+[data-spacing-sizing-mode="mobile"] {
+  --spacing-sizing-page-padding-padding-global: 20px;
+  --spacing-sizing-section-padding-padding-section-large: 64px;
+  --spacing-sizing-section-padding-padding-section-medium: 48px;
+  --spacing-sizing-section-padding-padding-section-small: 32px;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
