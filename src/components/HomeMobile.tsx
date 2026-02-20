@@ -100,7 +100,7 @@ export const HomeMobile = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col items-start relative"
+      className="flex flex-col items-start relative w-full overflow-x-hidden"
       data-spacing-sizing-mode="mobile"
       data-typography-mode="mobile"
     >
@@ -121,7 +121,7 @@ export const HomeMobile = (): JSX.Element => {
       </header>
 
       <section
-        className="relative flex flex-col items-center justify-center min-h-[70vh] px-[var(--spacing-sizing-page-padding-padding-global)] py-12 self-stretch w-full overflow-hidden"
+        className="flex flex-col items-center gap-12 pt-[var(--spacing-sizing-section-padding-padding-section-large)] pr-[var(--spacing-sizing-page-padding-padding-global)] pb-[var(--spacing-sizing-section-padding-padding-section-large)] pl-[var(--spacing-sizing-page-padding-padding-global)] relative self-stretch w-full flex-[0_0_auto] overflow-hidden"
         aria-labelledby="hero-heading"
       >
         <div
@@ -130,7 +130,8 @@ export const HomeMobile = (): JSX.Element => {
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="flex flex-col items-center gap-5 relative w-full">
+        <div className="flex flex-col max-w-[var(--spacing-sizing-container-container-large)] items-center gap-12 relative w-full flex-[0_0_auto]">
+          <div className="flex flex-col max-w-[var(--spacing-sizing-max-width-max-width-large)] items-center gap-5 relative w-full flex-[0_0_auto]">
             <h1
               id="hero-heading"
               className="relative self-stretch mt-[-1.00px] font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[color:var(--primitives-color-white)] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]"
@@ -141,6 +142,7 @@ export const HomeMobile = (): JSX.Element => {
               St. Mary&#39;s Social connects young adults in SOMD by hosting
               fresh and fun events to help you find in-person community.
             </p>
+          </div>
         </div>
       </section>
 
@@ -325,34 +327,6 @@ export const HomeMobile = (): JSX.Element => {
         </div>
       </section>
 
-      <footer className="flex flex-col items-start pr-[var(--spacing-sizing-page-padding-padding-global)] pl-[var(--spacing-sizing-page-padding-padding-global)] py-0 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex-col max-w-[var(--spacing-sizing-container-container-large)] items-start gap-4 p-4 flex-[0_0_auto] bg-primitives-color-neutral-dark rounded-[var(--UI-styles-radius-medium)] border-0 border-none flex relative w-full border-[color:var(--color-schemes-color-scheme-2-border)]">
-          <div className="flex items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex flex-col items-start relative flex-1 grow">
-              <p className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[color:var(--color-schemes-color-scheme-2-text)] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] relative self-stretch mt-[-1.00px] [font-style:var(--text-regular-semi-bold-font-style)]">
-                Find us where the action is
-              </p>
-              <p className="text-[color:var(--color-schemes-color-scheme-2-text)] text-[length:var(--text-small-normal-font-size)] leading-[var(--text-small-normal-line-height)] relative self-stretch font-text-small-normal font-[number:var(--text-small-normal-font-weight)] tracking-[var(--text-small-normal-letter-spacing)] [font-style:var(--text-small-normal-font-style)]">
-                Join SMS on social media
-              </p>
-            </div>
-          </div>
-          <div className="inline-flex items-start gap-3 relative flex-[0_0_auto]">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                className="cursor-pointer"
-              >
-                <link.Icon className="!relative !w-6 !h-6" />
-              </a>
-            ))}
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

@@ -448,6 +448,12 @@ You can apply the theme on any DOM node, not just the `body`
   --typography-text-sizes-heading-6: 18px;
   --typography-text-sizes-text-large: 18px;
   --typography-text-sizes-text-medium: 16px;
+  --heading-h1-font-size: 40px;
+  --heading-h2-font-size: 36px;
+  --heading-h3-font-size: 32px;
+  --heading-h4-font-size: 24px;
+  --heading-h5-font-size: 20px;
+  --heading-h6-font-size: 18px;
 }
 
 [data-spacing-sizing-mode="desktop"] {
