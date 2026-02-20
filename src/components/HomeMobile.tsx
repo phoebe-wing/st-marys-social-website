@@ -141,7 +141,6 @@ export const HomeMobile = (): JSX.Element => {
               St. Mary&#39;s Social connects young adults in SOMD by hosting
               fresh and fun events to help you find in-person community.
             </p>
-          </div>
         </div>
       </section>
 
