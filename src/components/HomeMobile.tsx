@@ -121,7 +121,7 @@ export const HomeMobile = (): JSX.Element => {
       </header>
 
       <section
-        className="relative flex flex-col items-center gap-12 pt-[var(--spacing-sizing-section-padding-padding-section-large)] pr-[var(--spacing-sizing-page-padding-padding-global)] pb-[var(--spacing-sizing-section-padding-padding-section-large)] pl-[var(--spacing-sizing-page-padding-padding-global)] self-stretch w-full flex-[0_0_auto] overflow-hidden"
+        className="relative flex flex-col items-center justify-center min-h-[70vh] px-[var(--spacing-sizing-page-padding-padding-global)] py-12 self-stretch w-full overflow-hidden"
         aria-labelledby="hero-heading"
       >
         <div
@@ -130,8 +130,7 @@ export const HomeMobile = (): JSX.Element => {
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="flex flex-col max-w-[var(--spacing-sizing-container-container-large)] items-center gap-12 relative w-full flex-[0_0_auto]">
-          <div className="flex flex-col max-w-[var(--spacing-sizing-max-width-max-width-large)] items-center gap-5 relative w-full flex-[0_0_auto]">
+        <div className="flex flex-col items-center gap-5 relative w-full">
             <h1
               id="hero-heading"
               className="relative self-stretch mt-[-1.00px] font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[color:var(--primitives-color-white)] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]"
