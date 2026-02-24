@@ -326,7 +326,45 @@ export const HomeMobile = (): JSX.Element => {
           </div>
         </div>
       </section>
+      
+      <section
+      className="flex flex-col items-center gap-12 pt-[var(--spacing-sizing-section-padding-padding-section-large)] pr-[var(--spacing-sizing-page-padding-padding-global)] pb-[var(--spacing-sizing-section-padding-padding-section-large)] pl-[var(--spacing-sizing-page-padding-padding-global)] relative bg-color-schemes-color-scheme-4-background"
+      data-spacing-sizing-mode="mobile"
+      data-typography-mode="mobile"
+      aria-labelledby="cta-heading"
+    >
+      <div className="flex flex-col max-w-[var(--spacing-sizing-container-container-large)] items-start gap-12 relative w-full flex-[0_0_auto]">
+        <article className="flex flex-col items-center justify-center gap-2 p-8 relative self-stretch w-full flex-[0_0_auto] bg-color-schemes-color-scheme-4-foreground rounded-[var(--UI-styles-radius-large)] border-0 border-none border-[color:var(--color-schemes-color-scheme-4-border)]">
+          <div className="flex flex-col max-w-[var(--spacing-sizing-max-width-max-width-large)] items-center gap-6 relative w-full flex-[0_0_auto]">
+            <header className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
+              <h2
+                id="cta-heading"
+                className="relative self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[color:var(--color-schemes-color-scheme-4-text)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)]"
+              >
+                Ready to join in
+              </h2>
 
+              <p className="relative self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[color:var(--color-schemes-color-scheme-4-text)] text-[length:var(--text-regular-normal-font-size)] text-center tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                Questions about the organization? Or are you a local business
+                interested in partnership? Email us today!
+              </p>
+            </header>
+
+            <div className="inline-flex items-start gap-4 relative flex-[0_0_auto]">
+              <a
+                href="mailto:stmaryssocialites@gmail.com"
+                className="all-[unset] box-border inline-flex items-center justify-center gap-2 px-6 py-2.5 relative flex-[0_0_auto] mt-[-4.00px] mb-[-4.00px] ml-[-4.00px] mr-[-4.00px] bg-[color:var(--primitives-color-corn)] rounded-[100px] border-b-4 [border-bottom-style:solid] border-primitives-color-corn-dark cursor-pointer transition-transform hover:translate-y-[2px] active:translate-y-[4px] active:border-b-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--primitives-color-corn-dark)]"
+                aria-label="Contact us"
+              >
+                <span className="relative w-fit font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[color:var(--primitives-color-neutral-darkest)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
+                  Contact
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     </div>
   );
 };
